@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>于磊奇 · 前端开发工程师</title>
+    <meta
+      name="description"
+      content="于磊奇的个人主页：前端开发工程师，3年经验，专注 React / Vue / TypeScript 与数据可视化。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div class="vignette"></div>
+    <div class="grain"></div>
+
+    <header class="nav">
+      <a class="logo" href="#top">YLQ</a>
+      <nav>
+        <a href="#about">关于</a>
+        <a href="#experience">经历</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="kicker">FRONTEND ENGINEER · HEFEI</p>
+          <h1>于磊奇</h1>
+          <p class="subtitle">
+            前端开发工程师 · 3年经验<br />
+            用代码把复杂系统做成清晰、流畅的体验
+          </p>
+          <div class="hero-meta">
+            <span>25岁</span>
+            <span>软件工程 · 本科</span>
+            <span>毕业院校：南京航空航天大学</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn ghost" href="#contact">联系我</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="panel">
+        <div class="section-head">
+          <span class="num">01</span>
+          <h2>关于我</h2>
+        </div>
+        <p class="lead">
+          软件工程专业本科毕业，深度编程技术爱好者。擅长同时推进多个项目与日程，个性开朗、容易相处，团队荣誉感强，有明确的职业规划。
+        </p>
+        <div class="stats">
+          <article>
+            <strong>3+</strong>
+            <span>年前端经验</span>
+          </article>
+          <article>
+            <strong>5</strong>
+            <span>个核心项目</span>
+          </article>
+          <article>
+            <strong>1.8s</strong>
+            <span>首屏优化成果</span>
+          </article>
+          <article>
+            <strong>4×</strong>
+            <span>加载性能提升</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="panel">
+        <div class="section-head">
+          <span class="num">02</span>
+          <h2>工作经历</h2>
+        </div>
+        <div class="timeline">
+          <article class="card">
+            <time>2025.07 — 至今</time>
+            <h3>前端开发工程师</h3>
+            <p class="org">合肥综合性国家科学中心数据空间研究院 · 杭州伯遇智能科技有限公司</p>
+            <ul>
+              <li>负责整体架构设计与模块划分，采用微前端实现模块解耦，保证系统高效可维护。</li>
+              <li>使用 TypeScript，并结合 ESLint / Prettier 统一编码规范。</li>
+              <li>基于 RBAC 实现权限控制，动态渲染菜单与按钮权限。</li>
+              <li>集成 ECharts 完成复杂数据可视化，优化图表渲染性能。</li>
+              <li>带领 3 人小组完成核心模块开发，进行代码审查与技术分享。</li>
+            </ul>
+          </article>
+          <article class="card">
+            <time>2023.10 — 2024.09</time>
+            <h3>前端开发工程师</h3>
+            <p class="org">南京品茗软件有限公司</p>
+            <ul>
+              <li>参与公司网站与移动端产品开发：页面布局、交互设计与前端逻辑。</li>
+              <li>与团队协作提升产品体验，参与需求讨论与技术方案评审。</li>
+              <li>持续跟进前端前沿技术并落地到业务中。</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="panel">
+        <div class="section-head">
+          <span class="num">03</span>
+          <h2>项目经历</h2>
+        </div>
+        <div class="grid">
+          <article class="card project">
+            <span class="tag">React · TypeScript · Zustand</span>
+            <time>2025.07 — 至今</time>
+            <h3>DeepTalent AI 智能人才招聘系统</h3>
+            <p>
+              覆盖职位管理、人才寻访、简历解析、AI 评估、面试安排、Offer
+              发放及再就业推荐的全流程人力资源系统。从 0 到 1
+              主导前端架构与核心模块。
+            </p>
+            <ul>
+              <li>AI 简历解析展示、评分雷达图与对比分析可视化</li>
+              <li>WebSocket 实时通知：面试安排、Offer 推送</li>
+              <li>对接 OCR，识别 PDF / Word 并结构化展示</li>
+              <li>代码分割、懒加载、骨架屏：首屏 5s → 1.8s，性能提升 4 倍+</li>
+              <li>ESLint、Prettier、Git Hooks 与 GitHub Actions CI/CD</li>
+            </ul>
+          </article>
+          <article class="card project">
+            <span class="tag">图谱渲染 · IM · 性能</span>
+            <time>2024.10 — 2025.02</time>
+            <h3>深度复杂社交网络系统</h3>
+            <p>高性能社交图谱与实时 IM。因国家安全数据保密，项目链接暂不展示。</p>
+            <ul>
+              <li>大规模节点交互优化，首屏加载 1.5s 以内</li>
+              <li>实时 IM：本地缓存与重发机制提升可靠性</li>
+              <li>组件库与工程规范建设，用户留存提升 40%</li>
+            </ul>
+          </article>
+          <article class="card project">
+            <span class="tag">Vue · Vite · Pinia</span>
+            <time>2024.06 — 2024.09</time>
+            <h3>小萤星语言艺术口才训练网站</h3>
+            <p>少儿培训机构官网：课程介绍、校区分布、教学成果与师资模块。</p>
+            <ul>
+              <li>Vue.js + Vite + Vue Router + Pinia 构建响应式界面</li>
+              <li>Axios 数据交互，Element Plus 快速搭建界面</li>
+            </ul>
+          </article>
+          <article class="card project">
+            <span class="tag">HTML5 · CSS3 · 响应式</span>
+            <time>2023.02 — 2024.09</time>
+            <h3>沃丰科技 UDESK 酒店客服管理系统</h3>
+            <p>客房预订与客户信息管理界面，多端一致体验。</p>
+            <ul>
+              <li>API 对接房间预订与客户数据，保证前后端同步</li>
+              <li>覆盖桌面、平板、手机及 iOS / Android / Windows 表现优化</li>
+            </ul>
+          </article>
+          <article class="card project">
+            <span class="tag">微信小程序 · Node.js · MySQL</span>
+            <time>2024.03 — 2024.05</time>
+            <h3>家政上门微信小程序</h3>
+            <p>预约家政服务的便捷平台：订单管理、服务评价与社区交流。</p>
+            <ul>
+              <li>小程序前端 + Node.js 业务逻辑</li>
+              <li>MySQL 存储用户信息与订单详情</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="panel">
+        <div class="section-head">
+          <span class="num">04</span>
+          <h2>专业技能</h2>
+        </div>
+        <div class="skill-cloud">
+          <span>JavaScript</span>
+          <span>TypeScript</span>
+          <span>HTML / CSS</span>
+          <span>Vue.js</span>
+          <span>React</span>
+          <span>Zustand</span>
+          <span>Pinia</span>
+          <span>Element Plus</span>
+          <span>Bootstrap</span>
+          <span>ECharts</span>
+          <span>Three.js</span>
+          <span>Axios</span>
+          <span>WebSocket</span>
+          <span>Node.js</span>
+          <span>MySQL</span>
+          <span>Git</span>
+          <span>微前端</span>
+          <span>RBAC</span>
+        </div>
+        <div class="certs">
+          <h3>资格证书</h3>
+          <p>
+            计算机一级 / 二级 · 大学英语四级 · Java 中级工程师 · 普通话二级甲等 ·
+            云计算中级 · 全国英语演讲比赛二等奖 · 全国演讲比赛二等奖
+          </p>
+        </div>
+      </section>
+
+      <section id="edu" class="panel compact">
+        <div class="section-head">
+          <span class="num">05</span>
+          <h2>教育与社团</h2>
+        </div>
+        <div class="edu-row">
+          <article class="card">
+            <time>2021 — 2025</time>
+            <h3>南京航空航天大学</h3>
+            <p>本科 · 软件技术（可视化程序设计）· 专业排名前 40%</p>
+            <p class="muted">主修：软件项目管理、线性代数、微信小程序开发、MySQL 数据库设计</p>
+          </article>
+          <article class="card">
+            <time>2021.09 — 2022.06</time>
+            <h3>校组织部成员 · 辩论社</h3>
+            <p>负责部员培训与交流会议，统筹各部门职能规划，提升协作效率。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel contact">
+        <div class="section-head">
+          <span class="num">06</span>
+          <h2>联系我</h2>
+        </div>
+        <p class="lead">如果你在做有挑战的前端产品，欢迎一起聊聊。</p>
+        <div class="contact-links">
+          <a href="mailto:1181277366@qq.com">1181277366@qq.com</a>
+          <a href="tel:17798866167">17798866167</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 于磊奇 · Built with Three.js</p>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./js/main.js?v=3"></script>
+  </body>
+</html>
