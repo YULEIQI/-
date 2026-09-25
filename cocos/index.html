@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星港防线 · Cocos 面试 Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark">✦</span><span>星港防线</span><small>COCOS INTERVIEW DEMO</small></div>
+        <div class="top-actions"><span id="waveLabel">WAVE 01</span><button id="pauseButton" class="icon-button" aria-label="暂停游戏">Ⅱ</button></div>
+      </header>
+
+      <section class="game-layout">
+        <aside class="side-panel left-panel">
+          <p class="eyebrow">MISSION CONTROL</p>
+          <h1>守住<br /><em>最后航道</em></h1>
+          <p class="intro">部署防御塔，拦截穿过星港外环的无人机群。</p>
+          <div class="stats">
+            <div><span>CORE HP</span><strong id="hpValue">100</strong></div>
+            <div><span>ENERGY</span><strong id="energyValue">120</strong></div>
+            <div><span>SCORE</span><strong id="scoreValue">0000</strong></div>
+          </div>
+          <div class="progress-track"><span id="waveProgress"></span></div>
+          <p class="hint">点击场地空位部署脉冲炮塔<br />炮塔会自动锁定最近目标</p>
+        </aside>
+
+        <section class="arena-wrap">
+          <div class="arena-frame">
+            <canvas id="gameCanvas" aria-label="星港防线游戏区域"></canvas>
+            <div id="pauseOverlay" class="pause-overlay hidden"><span>MISSION PAUSED</span><button id="resumeButton">继续任务</button></div>
+          </div>
+          <div class="arena-caption"><span><i class="live-dot"></i> LIVE SIMULATION</span><span>FPS <b id="fpsValue">60</b></span><span>BUILD SLOTS <b id="towerCount">0/6</b></span></div>
+        </section>
+
+        <aside class="side-panel right-panel">
+          <div class="panel-heading"><span>DEFENSE LOADOUT</span><span class="cost-label">COST</span></div>
+          <button class="tower-card selected" data-type="pulse"><span class="tower-icon pulse-icon">◈</span><span><b>脉冲炮塔</b><small>均衡 · 自动索敌</small></span><strong>30</strong></button>
+          <button class="tower-card" data-type="rail"><span class="tower-icon rail-icon">╋</span><span><b>轨道炮塔</b><small>高伤害 · 攻速较慢</small></span><strong>55</strong></button>
+          <div class="legend"><span><i class="legend-dot enemy"></i>敌方单位</span><span><i class="legend-dot tower"></i>防御炮塔</span></div>
+          <button id="restartButton" class="restart-button">↻ 重新开始</button>
+        </aside>
+      </section>
+
+      <footer><span>ARCHITECTURE: STATE MACHINE · OBJECT POOLING · FIXED TIMESTEP</span><span>BUILD 0.1.0 / YLQ</span></footer>
+    </main>
+    <div id="resultDialog" class="result-dialog hidden"><div class="result-card"><p class="eyebrow">MISSION REPORT</p><h2 id="resultTitle">航道已守住</h2><p id="resultText"></p><button id="resultButton">再次出击</button></div></div>
+    <script src="./main.js"></script>
+  </body>
+</html>
